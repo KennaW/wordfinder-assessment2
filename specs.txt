@@ -9,3 +9,5 @@ Specs for word instance app
 4 -- check for a short string (the) in a long string (the count of monte cristo) return 1 // test if function can check for a multiple character string
 
 5 -- check for a short string (the) in a long string (the cat in the hat) return 2 // test if function can check for multiple instances of multi character
+
+6 -- check for a short string (THE) in a long string (The count of monte cristo) return 1 // test if function can change case

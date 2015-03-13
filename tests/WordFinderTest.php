@@ -57,7 +57,16 @@
     //test if function counts one multi letter word single word string from a multi word string
     function test_wordfinder_countofmontecristo()
     {
-        
+        //Arrange
+        $test_WordFinder = new WordFinder;
+        $word = "the";
+        $sentance = "the count of monte cristo";
+
+        //Act
+        $result = $test_WordFinder->checkWord($word, $sentance);
+
+        //
+        $this->assertEquals(1, $result);
     }
   }
 ?>

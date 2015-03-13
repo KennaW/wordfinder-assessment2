@@ -11,7 +11,7 @@
 
   $app->get("/instance", function() use ($app) {
     $how_many = new RepeatCounter();
-    $number_of_times = $how_many->countRepeats($_GET['word'], $_GET['sentance']);
+    $number_of_times = $how_many->countRepeats($_GET['word'], $_GET['sentence']);
     return $app['twig']->render('instance.twig', array('number_of_times'=> $number_of_times));
   });
   return $app;

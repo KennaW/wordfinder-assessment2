@@ -5,6 +5,7 @@
   class WordFinderTest extends PHPUnit_Framework_TestCase
 
   {
+    //test if function counts matching letter from string
     function test_wordfinder_oneletter()
     {
       //test WordFinder from src/wordFinder.php
@@ -20,6 +21,33 @@
 
       //Assert
       $this->assertEquals(1, $result);
+    }
+
+    //test if function only counts one matching letter from string
+    function test_wordfinder_twoletters()
+    {
+        //Arrange
+        $test_WordFinder = new WordFinder;
+        $word = 'a';
+        $sentance = 'ab';
+
+        //Act
+        $result = $test_WordFinder->checkWord($word, $sentance);
+
+        //Assert
+        $this->assertEquals(1, $result);
+    }
+
+    //test if function counts more than one matching letter from string
+    function test_wordfinder_twosameletters()
+    {
+        //Arrange
+
+        //Act
+
+        //Assert
+
+
     }
   }
 ?>

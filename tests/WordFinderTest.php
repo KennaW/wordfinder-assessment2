@@ -16,7 +16,7 @@
       //Act
       //result is the numeric output of checkWord from chekcword function
       //word is the needle, sentance is the haystack
-      $result = $test_makeTitleCase->checkWord($word, $sentance);
+      $result = $test_WordFinder->checkWord($word, $sentance);
 
       //Assert
       $this->assertEquals(1, $result);

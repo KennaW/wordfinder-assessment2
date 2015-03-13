@@ -42,12 +42,22 @@
     function test_wordfinder_twosameletters()
     {
         //Arrange
+        $test_WordFinder = new WordFinder;
+        $word = "a";
+        $sentance = "aa";
 
         //Act
+        $result = $test_WordFinder->checkWord($word, $sentance);
 
         //Assert
+        $this->assertEquals(2, $result);
 
+    }
 
+    //test if function counts one multi letter word single word string from a multi word string
+    function test_wordfinder_countofmontecristo()
+    {
+        
     }
   }
 ?>

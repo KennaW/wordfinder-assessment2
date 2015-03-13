@@ -1,7 +1,7 @@
 <?php
-    class WordFinder
+    class RepeatCounter
     {
-        function checkWord($word, $sentance){
+        function countRepeats($word, $sentance){
             //word and sentance are make lowercase
             //checks word against sentance -- counting number of instances of word in sentance
             //assigns result to "word_count"

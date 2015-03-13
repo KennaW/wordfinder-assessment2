@@ -8,14 +8,11 @@
   $app->get("/", function() use ($app) {
     return $app['twig']->render('home.twig');
   });
-  
-  $app->post("/generate", function() use ($app) {
-    $word = $_POST['word'];
-    $words = $_POST['words'];
-    $words = explode(" ", $words);
-    $newAnagram = new AnagramComparator();
-    $anagrams = $newAnagram->testAnagram($word, $words);
-    return $app['twig']->render('generate.twig', array('word' => $word, 'words' => $words, 'anagrams' => $anagrams));
+
+  $app->get("/instance", function() use ($app) {
+    $how_many = new RepeatCounter();
+    $number_of_times = $how_many->countRepeats($_GET['word'], $_GET['sentance']);
+    return $app['twig']->render('instance.twig', array('number_of_times'=> $number_of_times));
   });
   return $app;
 ?>

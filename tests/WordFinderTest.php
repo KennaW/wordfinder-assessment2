@@ -10,7 +10,7 @@
     {
       //test WordFinder from src/wordFinder.php
       //Arrange
-      $test_WordFinder = new WordFinder;
+      $test_WordFinder = new RepeatCounter;
       $word = "a";
       $sentance = "a";
 
@@ -27,7 +27,7 @@
     function test_wordfinder_twoletters()
     {
         //Arrange
-        $test_WordFinder = new WordFinder;
+        $test_WordFinder = new RepeatCounter;
         $word = 'a';
         $sentance = 'ab';
 
@@ -42,7 +42,7 @@
     function test_wordfinder_twosameletters()
     {
         //Arrange
-        $test_WordFinder = new WordFinder;
+        $test_WordFinder = new RepeatCounter;
         $word = "a";
         $sentance = "aa";
 
@@ -58,7 +58,7 @@
     function test_wordfinder_countofmontecristo()
     {
         //Arrange
-        $test_WordFinder = new WordFinder;
+        $test_WordFinder = new RepeatCounter;
         $word = "the";
         $sentance = "the count of monte cristo";
 
@@ -73,7 +73,7 @@
     function test_wordfinder_thecatinthehat()
     {
         //Arrange
-        $test_WordFinder = new WordFinder;
+        $test_WordFinder = new RepeatCounter;
         $word = "the";
         $sentance = "the cat in the hat";
 
@@ -89,7 +89,7 @@
 
     {
         //Arrange
-        $test_WordFinder = new WordFinder;
+        $test_WordFinder = new RepeatCounter;
         $word = "THE";
         $sentance = "The count of monte cristo";
 

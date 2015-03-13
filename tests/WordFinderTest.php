@@ -83,5 +83,23 @@
         //
         $this->assertEquals(2, $result);
     }
+
+    //test if function will turn uppercase to lowercase and still match
+    function test_wordfinder_uppertolower()
+
+    {
+        //Arrange
+        $test_WordFinder = new WordFinder;
+        $word = "THE";
+        $sentance = "The count of monte cristo";
+
+        //Act
+        $result = $test_WordFinder->checkWord($word, $sentance);
+
+        //
+        $this->assertEquals(1, $result);
+    }
+
+
   }
 ?>

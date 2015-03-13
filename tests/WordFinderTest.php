@@ -68,5 +68,20 @@
         //
         $this->assertEquals(1, $result);
     }
+
+    //test if function counts more than one word from a multiword string
+    function test_wordfinder_thecatinthehat()
+    {
+        //Arrange
+        $test_WordFinder = new WordFinder;
+        $word = "the";
+        $sentance = "the cat in the hat";
+
+        //Act
+        $result = $test_WordFinder->checkWord($word, $sentance);
+
+        //
+        $this->assertEquals(2, $result);
+    }
   }
 ?>
